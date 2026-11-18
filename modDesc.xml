@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="116">
+    <author>PropaineX</author>
+    <version>1.1.3.0</version>
+    <title>
+        <en>Input Alert</en>
+    </title>
+    <description>
+        <en><![CDATA[See at a glance which inputs each production line needs.
+
+Open the Production Chains menu and pick a product. Every input in the recipe gets a status box:
+- Green tick: plenty in storage (10 or more production cycles).
+- Yellow plus: okay, nothing to do yet (2 to 10 cycles).
+- Red X: low or empty (under 2 cycles). Deliver this.
+
+In the INCOMING MATERIALS list, every material at 10% of its capacity or less is highlighted in red, so you can see at a glance what is running out.
+
+Works with base game, map and mod productions. Read only: it changes nothing in your productions.
+
+Hotkeys: none (keyboard and controller). Multiplayer supported.
+
+Open source: https://github.com/DTM-Mods/FS25_InputAlert
+
+Changelog 1.1.3.0:
+- INCOMING MATERIALS: materials at 10% or less are highlighted in red, only for switched-on products
+- Recipe status boxes now show reliably on every production
+- Code cleanup for the GIANTS mod checker]]></en>
+        <de><![CDATA[Zeigt auf einen Blick, welche Rohstoffe jede Produktionslinie braucht.
+
+Öffne das Menü Produktionsketten und wähle ein Produkt. Jeder Rohstoff im Rezept bekommt ein Statusfeld:
+- Grüner Haken: genug im Lager (10 oder mehr Produktionszyklen).
+- Gelbes Plus: in Ordnung, noch nichts zu tun (2 bis 10 Zyklen).
+- Rotes X: knapp oder leer (unter 2 Zyklen). Bitte liefern.
+
+In der Liste EINGEHENDE MATERIALIEN wird jedes Material mit 10 % seiner Kapazität oder weniger rot hervorgehoben, damit du auf einen Blick siehst, was zur Neige geht.
+
+Funktioniert mit Produktionen aus dem Grundspiel, von Karten und Mods. Nur lesend: an deinen Produktionen wird nichts verändert.
+
+Tastenbelegung: keine (Tastatur und Controller). Mehrspieler wird unterstützt.
+
+Quellcode: https://github.com/DTM-Mods/FS25_InputAlert
+
+Änderungen 1.1.3.0:
+- EINGEHENDE MATERIALIEN: Materialien mit 10 % oder weniger werden rot hervorgehoben, nur für aktive Produkte
+- Statusfelder im Rezept werden jetzt bei jeder Produktion zuverlässig angezeigt
+- Code bereinigt für den GIANTS Mod-Checker]]></de>
+    </description>
+    <iconFilename>icon_InputAlert.dds</iconFilename>
+    <multiplayer supported="true" />
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/InputAlertMenu.lua" />
+    </extraSourceFiles>
+</modDesc>
